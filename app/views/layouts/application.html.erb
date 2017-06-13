@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>RailsWikinimous</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +10,10 @@
   </head>
 
   <body>
+  <div class="header">
+    <h3>wikinimous</h3>
+    <p><%= link_to 'create a new article', new_article_path %></p>
+  </div>
     <%= yield %>
   </body>
 </html>
